@@ -18,3 +18,4 @@
     - Peripheral configuration - The internal peripheral is configured to recieve/transmit values after routing a physical pin to it
     - Routing - Assigning the physical pin to the internal peripheral by referring the datasheet
 - Routing is done using `PINSEL`
+- Configuring is done by referring the `DATASHEET`
