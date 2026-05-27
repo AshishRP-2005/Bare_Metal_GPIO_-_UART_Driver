@@ -9,7 +9,10 @@
 - For the LPC1768, Some common code for Configuring peripheral and pins
   - `PINSEL` - Specifies what the Pin will do (pin multiplexing)
   - `FIODIR` - Selects whether a pin in input or output, selecting its direction ` 1 = OUTPUT, 0 = INPUT`
-  - `FIOSET` - Set HIGH
-  - `FIOCLR` - Set LOW
+  - `FIOSET` - Set HIGH `when 1 = HIGH`
+  - `FIOCLR` - Set LOW `when 1 = LOW`
   - `FIOPIN` - Read pin state
-      
+
+## Question 
+To Set a BIT or Clear a BIT, I can use |= and &= ~() respectively, So why is there a need for different SET and CLR codes?
+- Apparently it is to increase speed and make sure that the accidently some other pin is not Set or Cleared
